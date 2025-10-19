@@ -49,11 +49,12 @@ const Navbar = () => {
   return (
     <header className="fixed z-50 pt-8 flex items-center justify-center w-full">
       <div className="bg-slate-950/50 px-4 py-2 rounded-full flex justify-center items-center gap-4">
-        {LINKS.map((link) => {
+        {LINKS.map((link, index) => {
           if (link.href === location.pathname) {
             return (
               <a
                 href={link.href}
+                key={index}
                 className={`${baseClassForLink} text-cyan-300 -translate-y-1`}
               >
                 {link.icons}
@@ -63,6 +64,7 @@ const Navbar = () => {
           return (
             <a
               href={link.href}
+              key={index}
               className={`${baseClassForLink} text-gray-500 hover:-translate-y-1 hover:text-cyan-500`}
             >
               {link.icons}
