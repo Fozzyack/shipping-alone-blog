@@ -1,18 +1,17 @@
-# Welcome to React Router!
+# Personal Developer Blog
 
-A modern, production-ready template for building full-stack React applications using React Router.
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+A modern blog built with React Router, featuring a clean design focused on sharing development insights, tutorials, and personal experiences.
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- Server-side rendering
+- Hot Module Replacement (HMR)
+- Asset bundling and optimization
+- Data loading and mutations
+- TypeScript support
+- TailwindCSS for styling
+- Responsive design
+- Dark theme with cyan accents
 
 ## Getting Started
 
@@ -49,10 +48,10 @@ npm run build
 To build and run using Docker:
 
 ```bash
-docker build -t my-app .
+docker build -t blog-app .
 
 # Run the container
-docker run -p 3000:3000 my-app
+docker run -p 3000:3000 blog-app
 ```
 
 The containerized application can be deployed to any platform that supports Docker, including:
@@ -78,10 +77,30 @@ Make sure to deploy the output of `npm run build`
 │   └── server/    # Server-side code
 ```
 
+## Tech Stack
+
+- React Router v7
+- React 19
+- TypeScript
+- Tailwind CSS v4
+- Vite
+- Node.js
+
+## Project Structure
+
+```
+app/
+├── components/     # Reusable components
+├── landing/        # Landing page component
+├── routes/         # Route components
+├── welcome/        # Welcome component
+├── app.css         # Global styles
+├── root.tsx        # Root component
+└── routes.ts       # Route configuration
+
+public/             # Static assets
+```
+
 ## Styling
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+This project uses Tailwind CSS for styling with a custom dark theme featuring slate backgrounds and cyan accents. The design is responsive and optimized for readability.

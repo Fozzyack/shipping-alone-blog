@@ -7,9 +7,15 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  background-color: #050d1a;
+  color: #e6f6ff;
+  font-family: var(--font-sans);
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+
+body {
+  min-height: 100%;
 }

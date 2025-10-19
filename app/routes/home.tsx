@@ -1,13 +1,17 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { Landing } from "../landing/landing";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Shipping Alone" },
+    {
+      name: "description",
+      content:
+        "Shipping Alone is a quiet journal on shipping products solo—field notes on momentum, tooling, and building without a team.",
+    },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return <Landing />;
 }
