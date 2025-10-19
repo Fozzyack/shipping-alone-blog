@@ -11,6 +11,7 @@ const ArticleList = () => {
                         header={article.name}
                         link={article.link}
                         exerpt={article.excerpt}
+                        experience={article.experience}
                         date={new Date(article.date)}
                         extraClassName=""
                     />

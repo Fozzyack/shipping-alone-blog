@@ -23,10 +23,10 @@ export function Landing() {
                     </p>
                     <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                         <a
-                            href="#posts"
+                            href={articles[0].link}
                             className="inline-flex items-center justify-center rounded-full bg-cyan-500/80 px-6 py-3 text-sm font-semibold text-white hover:bg-cyan-400 transition-all ease-in-out"
                         >
-                            Read the latest dispatches
+                            Read the latest dispatch
                         </a>
                     </div>
                 </header>
