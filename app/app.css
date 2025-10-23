@@ -42,14 +42,19 @@ li {
     @apply text-slate-200;
 }
 
+.blog-article-container button {
+    @apply px-6 py-2 rounded-xl bg-cyan-400 text-slate-800 hover:bg-cyan-300;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
 .blog-article-container a {
     @apply underline text-cyan-400;
-    position: relative;
     display: inline-block;
     transition: transform 0.2s;
 }
 
-.blog-article-container a:hover {
+.blog-article-container a:hover, button:hover{
     transform: translateY(-3px);
 }
 
