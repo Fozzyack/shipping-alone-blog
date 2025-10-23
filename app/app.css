@@ -16,6 +16,10 @@ body {
   }
 }
 
+h1 {
+    @apply mt-5 max-w-3xl text-4xl font-semibold text-slate-50 sm:text-5xl
+}
+
 body {
   min-height: 100%;
 }
