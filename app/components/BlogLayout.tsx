@@ -29,18 +29,18 @@ const BlogLayout = ({ article, children }: BlogLayoutInterface) => {
         <div className="relative text-slate-100">
             <Navbar />
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(30,41,59,0.6),_transparent_70%)]" />
-            <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-5xl flex-col px-6 pb-16 pt-20 sm:px-10 md:pt-32">
+            <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-5xl flex-col px-6 pb-16 pt-28 sm:px-10 md:pt-32">
                 <div className="border-b border-slate-800 py-4 grid grid-cols-1 md:grid-cols-12">
                     <div className="col-span-1 md:col-span-8">
                         <ShippingAloneTag />
                         <h1> {article.name} </h1>
-                        <p className="mt-4 text-slate-400">
+                        <p className="mt-2 text-slate-400">
                             {" "}
                             {article.excerpt}{" "}
                         </p>
                     </div>
-                    <div className="col-span-1 md:col-span-4 flex flex-col items-end justify-end">
-                        <p className="text-cyan-400 uppercase text-xs tracking-[0.2em]">
+                    <div className="col-span-1 md:col-span-4 flex flex-col mt-4 md:items-end justify-end">
+                        <p className="text-cyan-400 uppercase text-xs tracking-[0.2em] mb-2">
                             Date:
                         </p>
 
@@ -57,7 +57,7 @@ const BlogLayout = ({ article, children }: BlogLayoutInterface) => {
                         </span>
                     </div>
                 </div>
-                <div className="blog-article-container">{children}</div>
+                <article className="blog-article-container">{children}</article>
             </div>
         </div>
     );
